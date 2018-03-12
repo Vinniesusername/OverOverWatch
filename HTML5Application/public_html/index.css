@@ -73,3 +73,16 @@ button:focus, input:focus, textarea:focus {
     font-size: 20px;
     font-weight: normal;
 }
+
+footer {
+    font-family: "Comic Sans MS";
+}
+
+.yellow-footer {
+    background-color: #ffd304;
+}
+
+.grey-footer {
+    color: #efefef;
+    background-color: #3e3e3e;
+}
