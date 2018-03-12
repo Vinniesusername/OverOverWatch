@@ -1,12 +1,6 @@
-.class_name {
+/*.class_name {
     color: #f091ff;
-}
-.main{
-    background-color: gainsboro;
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 16px;
-    font-weight:normal;
-}
+}*/
 
 .XBoxOneX {
 
@@ -15,7 +9,19 @@
 .PS4 {
 
 }
-.Switch{
+
+.Switch {
 
 }
 
+.Mobile {
+
+}
+
+.PC {
+
+}
+
+.IFL {
+
+}
