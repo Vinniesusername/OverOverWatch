@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
 <html>
     <head>
-        <title> supply a title</title>
+        <title>Over Overwatch</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
          <script type = "text/javascript">
             
-          var answers = [0, 0, 0, 0, 0]; // sample survey answers. replace with survery
+          var answers = [0, 0, 0, 0, 0]; // sample survey answers. replace with survey
           
           var gameData = {}; //adding in game data for all games (limited for now)
           gameData["Rocket League"] = [1, 2, 0, 1, 0];
@@ -62,20 +57,20 @@ and open the template in the editor.
          <main>
              <section id="heading section">
                 <figure>
-                    <img id="header_image" src="../non-code%20source%20material/LogoOOW.png" />
+                    <img id="header_image" src="../non-code-source-material/LogoOOW.png" width="567" height="288" alt="Logo" />
                 </figure>
                 <h1>Providing an Alternative Game for all you Weary Heroes</h1>
              </section>
              <section id="platform selection">
                  <h2 class="class_name">Please select a platform</h2>
-                 <section id="selection">
-                     <button id="XBoxOneX" href="XBoxOneX.html">XBox One X</button>
-                     <button id="PS4" href="Playstation_Four.html">Playstation Four</button>
-                     <button id="Switch" href="Switch.html">Switch</button>
-                     <button id="Mobile" href="Mobile.html">Mobile</button>
-                     <button id="PC" href="PCmasterrace.html">PC</button>
-                     <button id="IFL" href="melee.html">I'm Feeling Lucky</button>
-                 </section>
+                 <form id="destination buttons">
+                     <button type="submit" id="XBoxOneX" formaction="XBoxOneX.html">XBox One X</button>
+                     <button type="submit" id="PS4" formaction="PS4.html">Playstation Four</button>
+                     <button type="submit" id="Switch" formaction="Switch.html">Switch</button>
+                     <button type="submit" id="Mobile" formaction="Mobile.html">Mobile</button>
+                     <button type="submit" id="PC" formaction="PCmasterrace.html">PC</button>
+                     <button type="submit" id="IFL" formaction="melee.html">I'm Feeling Lucky</button>
+                 </form>
              </section>
          </main>
     </body>
