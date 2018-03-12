@@ -60,7 +60,6 @@
                     function output() {
                         var answers = [0,0,0,0,0]; // survey answers
 
-
                         //fill answers
 
                         var gameData = {}; //adding in game data for all games (limited for now)
@@ -105,8 +104,9 @@
 
                                 }
                             }
-
                         }
+                        var return_box = document.getElementById("algorithm return");
+                        return_box.innerHTML = matchedGames[pick];
                     }
 
                 </script>
