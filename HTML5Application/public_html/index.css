@@ -60,27 +60,19 @@ button:focus, input:focus, textarea:focus {
     margin-bottom: 15px;
 }
 
-.PCsurvey_page {
+.survey_page {
     background: gainsboro linear-gradient(
             gainsboro,
             #ffd304 85%
     );
 
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 10em;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
 }
-
-.PS4survey_page {
-    background: gainsboro linear-gradient(
-            gainsboro,
-            #ffd304 85%
-    );
-
-}
-
-
-
-
-
-
 
 footer {
     font-family: "Comic Sans MS";
