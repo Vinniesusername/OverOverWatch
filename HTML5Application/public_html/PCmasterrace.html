@@ -7,7 +7,7 @@
 
 </head>
 <body>
-    <main class="PCsurvey_page">
+    <main class="PC_survey_page">
         <section id="heading section">
             <figure>
                 <img id="header_image" src="PC_png.png" width="296" height="162" alt="PC image" />
@@ -70,34 +70,34 @@
             <section id="results">
                 <script type="text/javascript">
                     function output() {
-                        var answers = [0, 0, 0, 0, 0]; // survey answers
+                        let answers = [0, 0, 0, 0, 0]; // survey answers
 
                         //fill answers
 
-                        var gameData = {}; //adding in game data for all games (limited for now)
+                        let gameData = {}; //adding in game data for all games (limited for now)
                         gameData["Rocket League"] = [1, 2, 0, 1, 0];
                         gameData["Skyrim"] =  [1, 0, 1, 1, 1];
                         gameData["Pubg"] =  [1, 1,  1, 0, 1];
                         gameData["League Of Legends"] = [0, 5, 0, 1, 0];
                         gameData["HoloPoint"] = [1, 1, 1, 1, 2];
                         gameData["Dota 2"] = [0, 5, 0, 1, 0];
-                        gameData[""]
+                        // gameData[""]
 
-                        var matchedGames = [];
-                        for(var j = 4; j >= -1; j--)
+                        let matchedGames = [];
+                        for(let j = 4; j >= -1; j--)
                         {
                             if(matchedGames.length > 0)
                             {
-                                var pick = Math.floor((Math.random() * matchedGames.length)); //pick one of matched games randomnly
+                                let pick = Math.floor((Math.random() * matchedGames.length)); //pick one of matched games randomnly
                                 console.log(matchedGames[pick]);
                                 break;
                             }
 
                             for (const [key, value] of Object.entries(gameData))
                             {
-                                var match = 0;
+                                let match = 0;
 
-                                for(var i = j;  i>= 0; i--)
+                                for(let i = j;  i>= 0; i--)
                                 {
 
                                     if(answers[i] === value[i])
@@ -117,7 +117,7 @@
                                 }
                             }
                         }
-                        var return_box = document.getElementById("algorithm return");
+                        let return_box = document.getElementById("algorithm return");
                         return_box.innerHTML = matchedGames[pick];
                     }
 
@@ -129,5 +129,8 @@
         </section>
     </main>
     <footer id="footer" class="yellow-footer">Project by Arjele, Drew, Manu, and Vincent. 2018.</footer>
+    <form>
+        <button formaction="index.html" type="submit" class="home-button">home</button>
+    </form>
 </body>
 </html>

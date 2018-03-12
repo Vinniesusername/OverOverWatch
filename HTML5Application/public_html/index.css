@@ -60,7 +60,7 @@ button:focus, input:focus, textarea:focus {
     margin-bottom: 15px;
 }
 
-.PCsurvey_page {
+.PC_survey_page {
     background: gainsboro linear-gradient(
             gainsboro,
             #ffd304 85%
@@ -75,7 +75,7 @@ button:focus, input:focus, textarea:focus {
 }
 
 footer {
-    font-family: "Comic Sans MS";
+    font-family: "Comic Sans MS", Helvetica, sans-serif;
 }
 
 .yellow-footer {
@@ -85,4 +85,14 @@ footer {
 .grey-footer {
     color: #efefef;
     background-color: #3e3e3e;
+}
+
+button.home-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #f091ff;
+    font-family: "Comic Sans MS", Helvetica, sans-serif;
+    box-shadow: none;
+    background-color: transparent;
 }
