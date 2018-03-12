@@ -11,11 +11,7 @@ main{
     font-size: 20px;
     font-weight:normal;
 }
-/*figure{
-    box-shadow: 8px 8px 5px grey;
-}
-TODO crop jpg image to remove awkward bow shadow
-*/
+
 h1{
     font-size: 32px;
 }
@@ -70,7 +66,7 @@ button:focus, input:focus, textarea:focus {
 .PS4survey_page {
     background: gainsboro linear-gradient(
             gainsboro,
-            #ffd304 85%
+            #0053ba 85%
     );
 }
 
@@ -85,6 +81,11 @@ footer {
 .grey-footer {
     color: #efefef;
     background-color: #3e3e3e;
+}
+
+.blue-footer {
+    background-color: #0053ba;
+    color: #ffffff;
 }
 
 button.home-button {
