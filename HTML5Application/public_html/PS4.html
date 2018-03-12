@@ -1,13 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" type="text/css" href="index.css">
     <meta charset="UTF-8">
     <title>PS4 Survey</title>
+
+
+
+
 </head>
 <body>
-    <main>
-        <p>placeholder for Playstation Four</p>
-        <footer id="footer">Project by Arjele, Drew, Manu, and Vincent. 2018.</footer>
+<main class="PS4survey_page">
+    <section id="heading section">
+        <figure>
+            <img id="header_image" src="ps4.png" width="320" height="240" alt="PS4 image" />
+        </figure>
+        <h1>Please fill out these questions</h1>
+    </section>
+    <section id="platform selection section">
+        <form id="specification radios">
+            <section class="radio-section" id="Price">
+                <label id="price label">Price:</label><br>
+                <form>
+                    <input name="price" value="0" type="radio" id="Free radio">Free</input>
+                    <input name="price" value="1" type="radio" id="Paid radio">Paid</input>
+                    <input name="price" value="2" type="radio" id="Subscription radio">Subscription</input>
+                </form>
+            </section>
+            <section class="radio-section" id="Genre">
+                <label id="Genre label">Genre:</label>
+                <form>
+                    <input name="genre" value="0" type="radio" id="RPG radio">Role Playing</input>
+                    <input name="genre" value="1" type="radio" id="Shooting radio">Shooting</input>
+                    <input name="genre" value="2" type="radio" id="Platforming radio">Platforming</input>
+                    <input name="genre" value="3" type="radio" id="Racing radio">Racing</input>
+                    <input name="genre" value="4" type="radio" id="Fighting radio">Fighting</input>
+                    <input name="genre" value="5" type="radio" id="Strategy radio">Strategy</input>
+                    <input name="genre" value="6" type="radio" id="None of the Above radio">None of the Above</input>
+                </form>
+            </section>
+            <section class="radio-section" id="Level of Violence">
+                <label id="LOV label">Level of Violence:</label>
+                <form>
+                    <input name="LOVE" value="0" type="radio" id="None radio">None</input>
+                    <input name="LOVE" value="1" type="radio" id="Cartoon radio">Cartoon</input>
+                    <input name="LOVE" value="2" type="radio" id="Full on Doom radio">Full on Doom</input>
+                </form>
+            </section>
+            <section class="radio-section" id="Play Level">
+                <label id="Play level label">Level of Play:</label>
+                <form>
+                    <input name="Play Level" value="0" type="radio" id="Casual radio">Casual</input>
+                    <input name="Play Level" value="1" type="radio" id="Competitive radio">Competitive</input>
+                </form>
+            </section>
+            <section class="radio-section" id="World Style">
+                <label id="World Style label">World Style:</label>
+                <form>
+                    <input name="World Style" value="0" type="radio" id="Realistic radio">Realistic</input>
+                    <input name="World Style" value="1" type="radio" id="Fantasy radio">Fantasy</input>
+                </form>
+            </section>
+            <section class="radio-section" id="Graphics Ballpark">
+                <label id="gpu label">Graphics Performance Ballpark:</label>
+                <form>
+                    <input name="gpu" value="0" type="radio" id="780 radio">Nvidia GTX 780</input>
+                    <input name="gpu" value="1" type="radio" id="1070 radio">Nvidia GTX 1070</input>
+                    <input name="gpu" value="2" type="radio" id="1080 radio">Nvidia GTX 1080</input>
+                </form>
+            </section>
+        </form>
+        <section id="results">
+            <script type="text/javascript">
+                function output() {
+                    var answers = [0, 0, 0, 0, 0]; // survey answers
+
+                    //fill answers
+
+                    var gameData = {}; //adding in game data for all games (limited for now)
+                    gameData["Rocket League"] = [1, 2, 0, 1, 0];
+                    gameData["Skyrim"] =  [1, 0, 1, 1, 1];
+                    gameData["Pubg"] =  [1, 1,  1, 0, 1];
+                    gameData["League Of Legends"] = [0, 5, 0, 1, 0];
+                    gameData["HoloPoint"] = [1, 1, 1, 1, 2];
+                    gameData["Dota 2"] = [0, 5, 0, 1, 0];
+                    gameData[""]
+
+                    var matchedGames = [];
+                    for(var j = 4; j >= -1; j--)
+                    {
+                        if(matchedGames.length > 0)
+                        {
+                            var pick = Math.floor((Math.random() * matchedGames.length)); //pick one of matched games randomnly
+                            console.log(matchedGames[pick]);
+                            break;
+                        }
+
+                        for (const [key, value] of Object.entries(gameData))
+                        {
+                            var match = 0;
+
+                            for(var i = j;  i>= 0; i--)
+                            {
+
+                                if(answers[i] === value[i])
+                                {
+                                    match++;
+                                }
+                            }
+                            if(match === j + 1)
+                            {
+
+                                matchedGames.push(key);
+                            }
+                            else
+                            {
+                                match = 0;
+
+                            }
+                        }
+                    }
+                    var return_box = document.getElementById("algorithm return");
+                    return_box.innerHTML = matchedGames[pick];
+                }
+
+            </script>
+            <button onclick="output()">Get Recommendation</button>
+            <br><br>
+            <label style="margin-top: 30px;" id="algorithm return"> </label>
+        </section>
+    </section>
     </main>
 </body>
 </html>
