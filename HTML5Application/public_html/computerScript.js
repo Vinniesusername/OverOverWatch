@@ -1,7 +1,7 @@
 var answers = []; // survey answers
 
-//fill answers
 
+//fill answers
 
 var gameData = {}; //adding in game data for all games (limited for now)
 gameData["Rocket League"] = [1, 2, 0, 1, 0];
