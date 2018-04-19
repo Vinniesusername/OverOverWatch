@@ -1,48 +1,83 @@
-var answers = []; // survey answers
+function output() {
+    console.log("we in here");
+    let price = document.getElementsByName('price');
+    let genre = document.getElementsByName('genre');
+    let LOV = document.getElementsByName('LOVE');
+    let playLevel = document.getElementsByName('Play Level');
+    let worldStyle = document.getElementsByName('World Style');
+    let GPU = document.getElementsByName('gpu');
+
+    price = parseInt(scanButtons(price));
+    genre = parseInt(scanButtons(genre));
+    LOV = parseInt(scanButtons(LOV));
+    playLevel = parseInt(scanButtons(playLevel));
+    worldStyle = parseInt(scanButtons(worldStyle));
+    GPU = parseInt(scanButtons(GPU));
 
 
-//fill answers
 
-var gameData = {}; //adding in game data for all games (limited for now)
-gameData["Rocket League"] = [1, 2, 0, 1, 0];
-gameData["Skyrim"] =  [1, 0, 1, 1, 1];
-gameData["Pubg"] =  [1, 1,  1, 0, 1];
-gameData["League Of Legends"] = [0, 5, 0, 1, 0];
-gameData["HoloPoint"] = [1, 1, 1, 1, 2];
-gameData["Test Game"] = [0, 5, 0, 1, 0];
 
-var matchedGames = [];
-for(var j = 4; j >= -1; j--)
-{
-    if(matchedGames.length > 0)
+
+    let answers = [price,genre, LOV, playLevel, worldStyle, GPU]; // survey answers
+
+    //fill answers
+
+    let gameData = {}; //adding in game data for all games (limited for now)
+    gameData["Rocket League"] = [1, 3, 0, 1, 0, 1];
+    gameData["Skyrim"] =  [1, 0, 1, 1, 1, 0];
+    gameData["Pubg"] =  [1, 1,  1, 0, 1, 0];
+    gameData["League Of Legends"] = [0, 5, 0, 1, 1, 0];
+    gameData["HoloPoint"] = [1, 1, 1, 1, 1,  2];
+    gameData["Dota 2"] = [0, 5, 0, 1, 1, 0];
+
+
+    let matchedGames = [];
+    for(let j = 5; j >= -1; j--)
     {
-        var pick = Math.floor((Math.random() * matchedGames.length)); //pick one of matched games randomnly
-        console.log(matchedGames[pick]);
-        break;
-    }
-
-    for (const [key, value] of Object.entries(gameData))
-    {
-        var match = 0;
-
-        for(var i = j;  i>= 0; i--)
+        if(matchedGames.length > 0)
         {
+            let pick = Math.floor((Math.random() * matchedGames.length)); //pick one of matched games randomnly
+            console.log(matchedGames[pick]);
+            //let return_box = document.getElementById("algorithm return");
+            //return_box.innerHTML = matchedGames[pick];
+            break;
+        }
 
-            if(answers[i] === value[i])
+        for (const [key, value] of Object.entries(gameData))
+        {
+            let match = 0;
+
+            for(let i = j;  i>= 0; i--)
             {
-                match++;
+
+                if(answers[i] === value[i])
+                {
+                    match++;
+                }
+            }
+            if(match === j + 1)
+            {
+
+                matchedGames.push(key);
+            }
+            else
+            {
+                match = 0;
+
             }
         }
-        if(match === j + 1)
-        {
+    }
+}
 
-            matchedGames.push(key);
-        }
-        else
+function scanButtons(button)
+{
+    for(let i = 0; i < button.length; i ++)
+    {
+        if(button[i].checked)
         {
-            match = 0;
-
+            return button[i].value;
         }
     }
-
 }
+
+
