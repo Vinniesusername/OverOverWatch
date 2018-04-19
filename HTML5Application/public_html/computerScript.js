@@ -21,7 +21,7 @@ function output() {
     let answers = [price,genre, LOV, playLevel, worldStyle, GPU]; // survey answers
 
     //fill answers
-
+    // place holder hashmap waiting for database
     let gameData = {}; //adding in game data for all games (limited for now)
     gameData["Rocket League"] = [1, 3, 0, 1, 0, 1];
     gameData["Skyrim"] =  [1, 0, 1, 1, 1, 0];
@@ -38,8 +38,8 @@ function output() {
         {
             let pick = Math.floor((Math.random() * matchedGames.length)); //pick one of matched games randomnly
             console.log(matchedGames[pick]);
-            //let return_box = document.getElementById("algorithm return");
-            //return_box.innerHTML = matchedGames[pick];
+            let return_box = document.getElementById("algorithm return");
+            return_box.innerHTML = matchedGames[pick];
             break;
         }
 
