@@ -91,6 +91,13 @@ button:focus, input:focus, textarea:focus {
     );
 }
 
+.XBOXsurvey_page {
+    background: gainsboro linear-gradient(
+            gainsboro,
+            #107c10 85%
+    );
+}
+
 footer {
     font-family: Helvetica, Arial, sans-serif;
     bottom: 0px;
@@ -110,6 +117,13 @@ footer {
     background-color: #0053ba;
     color: #ffffff;
 }
+
+.green-footer {
+    background-color: #107c10;
+    color: #ffffff;
+}
+
+
 
 button.home-button {
     position: absolute;
