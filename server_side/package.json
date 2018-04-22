@@ -1,0 +1,25 @@
+{
+  "name": "overoverwatch",
+  "version": "0.0.5",
+  "description": "node.js server for OverOverWatch",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "path": "^0.12.7",
+    "redis": "^2.8.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "testserver"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vinniesusername/OverOverWatch.git"
+  },
+  "author": "drew mack, manu nair, vincent prestianni, arjele bureros",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/Vinniesusername/OverOverWatch/issues"
+  },
+  "homepage": "https://github.com/Vinniesusername/OverOverWatch#readme"
+}

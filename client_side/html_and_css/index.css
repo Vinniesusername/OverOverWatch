@@ -1,9 +1,30 @@
+html {
+    width:100%;
+    height: 100%;
+    display: table;
+}
+
+body {
+    width:100%;
+    display:table-cell;
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    margin: 0px
+}
+
 main{
     background: gainsboro linear-gradient(
             gainsboro,
             #3e3e3e 85%
     );
-
+    height: 100%;
+    background-size: cover;
     text-align: center;
     padding-top:4em;
     padding-bottom: 10em;
@@ -71,7 +92,9 @@ button:focus, input:focus, textarea:focus {
 }
 
 footer {
-    font-family: "Comic Sans MS", Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
+    bottom: 0px;
+    position: absolute;
 }
 
 .yellow-footer {
@@ -90,10 +113,10 @@ footer {
 
 button.home-button {
     position: absolute;
-    top: 0;
-    right: 0;
-    color: #f091ff;
-    font-family: "Comic Sans MS", Helvetica, sans-serif;
-    box-shadow: none;
-    background-color: transparent;
+    top: 7px;
+    right: 7px;
+    color: #ffffff;
+    font-family: Helvetica, Arial, sans-serif;
+    box-shadow: 8px 8px 5px grey;
+    background-color: #3e3e3e;
 }

@@ -4,13 +4,14 @@
     <link rel="stylesheet" type="text/css" href="index.css">
     <meta charset="UTF-8">
     <title>PC Survey</title>
+    <script type="text/javascript" src="http://localhost:9001/computerScript.js"></script>
 
 </head>
 <body>
     <main class="PC_survey_page">
         <section id="heading section">
             <figure>
-                <img id="header_image" src="PC_png.png" width="296" height="162" alt="PC image" />
+                <img id="header_image" src="http://localhost:9001/PC_png.png" width="296" height="162" alt="PC image" />
             </figure>
             <h1>Please fill out these questions</h1>
         </section>
@@ -68,60 +69,7 @@
                 </section>
             </form>
             <section id="results">
-                <script type="text/javascript">
-                    function output() {
-                        let answers = [0, 0, 0, 0, 0]; // survey answers
 
-                        //fill answers
-
-                        let gameData = {}; //adding in game data for all games (limited for now)
-                        gameData["Rocket League"] = [1, 2, 0, 1, 0];
-                        gameData["Skyrim"] =  [1, 0, 1, 1, 1];
-                        gameData["Pubg"] =  [1, 1,  1, 0, 1];
-                        gameData["League Of Legends"] = [0, 5, 0, 1, 0];
-                        gameData["HoloPoint"] = [1, 1, 1, 1, 2];
-                        gameData["Dota 2"] = [0, 5, 0, 1, 0];
-                        // gameData[""]
-
-                        let matchedGames = [];
-                        for(let j = 4; j >= -1; j--)
-                        {
-                            if(matchedGames.length > 0)
-                            {
-                                let pick = Math.floor((Math.random() * matchedGames.length)); //pick one of matched games randomnly
-                                console.log(matchedGames[pick]);
-                                let return_box = document.getElementById("algorithm return");
-                                return_box.innerHTML = matchedGames[pick];
-                                break;
-                            }
-
-                            for (const [key, value] of Object.entries(gameData))
-                            {
-                                let match = 0;
-
-                                for(let i = j;  i>= 0; i--)
-                                {
-
-                                    if(answers[i] === value[i])
-                                    {
-                                        match++;
-                                    }
-                                }
-                                if(match === j + 1)
-                                {
-
-                                    matchedGames.push(key);
-                                }
-                                else
-                                {
-                                    match = 0;
-
-                                }
-                            }
-                        }
-                    }
-
-                </script>
                 <button onclick="output()">Get Recommendation</button>
                 <br><br>
                 <label style="margin-top: 30px; color: #3e3e3e;" id="algorithm return"> </label>
