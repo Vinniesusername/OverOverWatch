@@ -94,22 +94,23 @@ button:focus, input:focus, textarea:focus {
 footer {
     font-family: Helvetica, Arial, sans-serif;
     bottom: 0px;
-    position: absolute;
+    position: fixed;
+    background-color: transparent;
 }
 
-.yellow-footer {
-    background-color: #ffd304;
-}
+/*.yellow-footer {*/
+    /*background-color: #ffd304;*/
+/*}*/
 
-.grey-footer {
-    color: #efefef;
-    background-color: #3e3e3e;
-}
+/*.grey-footer {*/
+    /*color: #efefef;*/
+    /*background-color: #3e3e3e;*/
+/*}*/
 
-.blue-footer {
-    background-color: #0053ba;
-    color: #ffffff;
-}
+/*.blue-footer {*/
+    /*background-color: #0053ba;*/
+    /*color: #ffffff;*/
+/*}*/
 
 button.home-button {
     position: absolute;
