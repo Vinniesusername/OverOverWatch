@@ -20,7 +20,7 @@ function output() {
 
     let answers = [price,genre, LOV, playLevel, worldStyle, GPU]; // survey answers
 
-    //fill answers
+    // fill answers
     // place holder hashmap waiting for database
     let gameData = {}; //adding in game data for all games (limited for now)
     gameData["Rocket League"] = [1, 3, 0, 1, 0, 1];
