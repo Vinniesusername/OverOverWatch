@@ -14,10 +14,6 @@ function output() {
     worldStyle = parseInt(scanButtons(worldStyle));
     GPU = parseInt(scanButtons(GPU));
 
-
-
-
-
     let answers = [price,genre, LOV, playLevel, worldStyle, GPU]; // survey answers
 
     // fill answers
