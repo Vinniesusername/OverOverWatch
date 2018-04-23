@@ -4,6 +4,8 @@
   "description": "node.js server for OverOverWatch",
   "main": "server.js",
   "dependencies": {
+    "ajax": "0.0.4",
+    "body-parser": "^1.18.2",
     "express": "^4.16.3",
     "node": "^9.11.0",
     "path": "^0.12.7",
