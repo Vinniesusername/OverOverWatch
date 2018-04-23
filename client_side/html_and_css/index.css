@@ -112,8 +112,8 @@ button:focus, input:focus, textarea:focus {
 }
 
 .radio-section input[type=radio]:checked + label:before {
-    background-color: MediumSeaGreen;
-    border-color: MediumSeaGreen;
+    background-color: #656565;
+    border-color: #585858;
     color: #fff;
 }
 
@@ -124,8 +124,8 @@ button:focus, input:focus, textarea:focus {
 
 .radio-section input[type=radio]:checked:disabled + label:before {
     transform: scale(1);
-    background-color: #bfb;
-    border-color: #bfb;
+    background-color: #777777;
+    border-color: #656565;
 }
 
 .Mobile_survey_page {
