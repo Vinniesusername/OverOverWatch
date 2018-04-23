@@ -34,11 +34,13 @@ main{
 }
 
 h1{
-    font-size: 32px;
+    /*font-size: 32px; */
+    font-size: calc(22px + (32 - 22) * ((100vw - 320px) / (1600 - 320))); /*fluid type*/
 }
 
 h2{
-    font-size: 25px;
+    /*font-size: 25px;*/
+    font-size: calc(14px + (26 - 14) * ((100vw - 320px) / (1600 - 320))); /*fluid type*/
 }
 
 * {
@@ -58,7 +60,8 @@ button {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px;
+    /*font-size: 18px;*/
+    font-size: calc(14px + (18 - 14) * ((100vw - 320px) / (1600 - 320))); /*fluid type*/
     opacity: 0.65;
     filter: alpha(opacity=90);
     box-shadow: 8px 8px 5px grey;
@@ -76,6 +79,14 @@ button:focus, input:focus, textarea:focus {
 .radio-section {
     margin-bottom: 15px;
 }
+
+.Mobile_survey_page {
+    background: gainsboro linear-gradient(
+            gainsboro,
+            #ffd309 85%
+    );
+}
+
 
 .PC_survey_page {
     background: gainsboro linear-gradient(
@@ -98,6 +109,8 @@ button:focus, input:focus, textarea:focus {
     );
 }
 
+
+
 footer {
     font-family: Helvetica, Arial, sans-serif;
     bottom: 0px;
@@ -119,7 +132,6 @@ footer {
 /*}*/
 
 .green-footer {
-    background-color: #107c10;
     color: #ffffff;
 }
 
