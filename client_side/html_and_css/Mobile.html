@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <title>Mobile Survey</title>
     <script type="text/javascript" src="http://localhost:9001/computerScript.js"></script>
-
+    <script type="text/javascript" src="http://localhost:9001/results.js"></script>
 </head>
 <body>
 <main class="Mobile_survey_page">
@@ -45,39 +45,28 @@
                     <label for="None of the Above radio">None of the Above</label>
                 </form>
             </section>
-            <section class="radio-section" id="Level of Violence">
-                <label id="LOV label"><b>Level of Violence:</b></label>
-                <form>
-                    <input name="LOVE" value="0" type="radio" id="None radio">
-                    <label for="None radio">None</label>
-                    <input name="LOVE" value="1" type="radio" id="Cartoon radio">
-                    <label for="Cartoon radio">Cartoon</label>
-                    <input name="LOVE" value="2" type="radio" id="Full on Doom radio">
-                    <label for="Full on Doom radio">Full on Doom</label>
-                </form>
-            </section>
             <section class="radio-section" id="Play Style">
                 <label id="Play level label"><b>Play Style:</b></label>
                 <form>
-                    <input name="Play Level" value="0" type="radio" id="PvE radio">
+                    <input name="PlayLevel" value="0" type="radio" id="PvE radio">
                     <label for="PvE radio">PvE</label>
-                    <input name="Play Level" value="1" type="radio" id="PvP radio">
+                    <input name="PlayLevel" value="1" type="radio" id="PvP radio">
                     <label for="PvP radio">PvP</label>
                 </form>
             </section>
             <section class="radio-section" id="World Style">
                 <label id="World Style label"><b>World Style:</b></label>
                 <form>
-                    <input name="World Style" value="0" type="radio" id="Realistic radio">
+                    <input name="WorldStyle" value="0" type="radio" id="Realistic radio">
                     <label for="Realistic radio">Realistic</label>
-                    <input name="World Style" value="1" type="radio" id="Fantasy radio">
+                    <input name="WorldStyle" value="1" type="radio" id="Fantasy radio">
                     <label for="Fantasy radio">Fantasy</label>
                 </form>
             </section>
         </form>
         <section id="results">
 
-            <button onclick="output()">Get Recommendation</button>
+            <button onclick="mobile_result()">Get Recommendation</button>
             <br><br>
             <i><b><font size="+4"><label style="margin-top: 30px;" id="algorithm return"> </label></b></font></i>
         </section>

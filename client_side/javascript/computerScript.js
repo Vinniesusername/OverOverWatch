@@ -1,6 +1,6 @@
 function output(dataset, platform, answers) {
 
-    console.log(answers);
+    // console.log(answers);
 
     let gameData = dataset;
     let pick;

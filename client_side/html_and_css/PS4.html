@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>PS4 Survey</title>
     <script type="text/javascript" src="http://localhost:9001/computerScript.js"></script>
+    <script type="text/javascript" src="http://localhost:9001/results.js"></script>
 </head>
 
 <body>
@@ -61,25 +62,25 @@
             <section class="radio-section" id="Play Level">
                 <label id="Play level label"><b>Level of Play:</b></label>
                 <form>
-                    <input name="Play Level" value="0" type="radio" id="Casual radio">
+                    <input name="PlayLevel" value="0" type="radio" id="Casual radio">
                     <label for="Casual radio">Casual</label>
-                    <input name="Play Level" value="1" type="radio" id="Competitive radio">
+                    <input name="PlayLevel" value="1" type="radio" id="Competitive radio">
                     <label for="Competitive radio">Competitive</label>
                 </form>
             </section>
             <section class="radio-section" id="World Style">
                 <label id="World Style label"><b>World Style:</b></label>
                 <form>
-                    <input name="World Style" value="0" type="radio" id="Realistic radio">
+                    <input name="WorldStyle" value="0" type="radio" id="Realistic radio">
                     <label for="Realistic radio">Realistic</label>
-                    <input name="World Style" value="1" type="radio" id="Fantasy radio">
+                    <input name="WorldStyle" value="1" type="radio" id="Fantasy radio">
                     <label for="Fantasy radio">Fantasy</label>
                 </form>
             </section>
         </form>
         <section id="results">
 
-            <button onclick="output()">Get Recommendation</button>
+            <button onclick="ps4_result()">Get Recommendation</button>
             <br><br>
             <i><b><font size="+4"><label style="margin-top: 30px;" id="algorithm return"> </label></b></font></i>
         </section>

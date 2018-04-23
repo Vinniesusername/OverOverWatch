@@ -69,3 +69,44 @@ server.post('/PC.html', function(req, res) {
     console.log(rec);
     res.send(rec);
 });
+
+server.post('/mobile.html', function(req, res) {
+    let price = req.body.price;
+    let genre = req.body.genre;
+    let PlayLevel = req.body.PlayLevel;
+    let WorldStyle = req.body.WorldStyle;
+
+    let survey_ans = [price, genre, PlayLevel, WorldStyle];
+
+    let rec = output(mo_list, 'mobile', survey_ans);
+    console.log(rec);
+    res.send(rec);
+});
+
+server.post('/XBoxOneX.html', function(req, res) {
+    let price = req.body.price;
+    let genre = req.body.genre;
+    let LOVE = req.body.LOVE;
+    let PlayLevel = req.body.PlayLevel;
+    let WorldStyle = req.body.WorldStyle;
+
+    let survey_ans = [price, genre, LOVE, PlayLevel, WorldStyle];
+
+    let rec = output(xb_list, 'xbox', survey_ans);
+    console.log(rec);
+    res.send(rec);
+});
+
+server.post('/ps4.html', function(req, res) {
+    let price = req.body.price;
+    let genre = req.body.genre;
+    let LOVE = req.body.LOVE;
+    let PlayLevel = req.body.PlayLevel;
+    let WorldStyle = req.body.WorldStyle;
+
+    let survey_ans = [price, genre, LOVE, PlayLevel, WorldStyle];
+
+    let rec = output(xb_list, 'ps4', survey_ans);
+    console.log(rec);
+    res.send(rec);
+});
