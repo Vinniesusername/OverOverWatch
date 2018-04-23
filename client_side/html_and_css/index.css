@@ -20,8 +20,8 @@ body{
 
 main{
     background: gainsboro linear-gradient(
-            gainsboro,
-            #3e3e3e 85%
+            #ffffff,
+            #cccccc 85%
     );
     height: 100%;
     background-size: cover;
@@ -80,36 +80,89 @@ button:focus, input:focus, textarea:focus {
     margin-bottom: 15px;
 }
 
+.radio-section input[type=radio] + label {
+   /* display: block;*/
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+}
+
+
+.radio-section input[type=radio] {
+    display: none;
+}
+
+.radio-section input[type=radio] + label:before {
+    content: "\2714";
+    border: 0.1em solid #000;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+}
+
+.radio-section input[type=radio] + label:active:before {
+    transform: scale(0);
+}
+
+.radio-section input[type=radio]:checked + label:before {
+    background-color: #656565;
+    border-color: #585858;
+    color: #fff;
+}
+
+.radio-section input[type=radio]:disabled + label:before {
+    transform: scale(1);
+    border-color: #aaa;
+}
+
+.radio-section input[type=radio]:checked:disabled + label:before {
+    transform: scale(1);
+    background-color: #777777;
+    border-color: #656565;
+}
+
 .Mobile_survey_page {
     background: gainsboro linear-gradient(
-            gainsboro,
-            #ffd309 85%
+            #ffffff,
+            #ff9999 85%
     );
 }
 
 
 .PC_survey_page {
     background: gainsboro linear-gradient(
-            gainsboro,
-            #ffd304 85%
+            #ffffff,
+            #ffe880 85%
     );
 }
 
 .PS4survey_page {
     background: gainsboro linear-gradient(
-            gainsboro,
-            #0053ba 85%
+            #ffffff,
+            #80b9ff 85%
     );
 }
 
 .XBOXsurvey_page {
     background: gainsboro linear-gradient(
-            gainsboro,
-            #107c10 85%
+            #ffffff,
+            #8ef08e 85%
     );
 }
 
-
+.melee_page {
+    background: gainsboro linear-gradient(
+            #ffffff,
+            #ffb380 85%
+    );
+}
 
 footer {
     font-family: Helvetica, Arial, sans-serif;
