@@ -20,8 +20,8 @@ body{
 
 main{
     background: gainsboro linear-gradient(
-            gainsboro,
-            #3e3e3e 85%
+            #ffffff,
+            #cccccc 85%
     );
     height: 100%;
     background-size: cover;
@@ -82,34 +82,39 @@ button:focus, input:focus, textarea:focus {
 
 .Mobile_survey_page {
     background: gainsboro linear-gradient(
-            gainsboro,
-            #ffd309 85%
+            #ffffff,
+            #ff9999 85%
     );
 }
 
 
 .PC_survey_page {
     background: gainsboro linear-gradient(
-            gainsboro,
-            #ffd304 85%
+            #ffffff,
+            #ffe880 85%
     );
 }
 
 .PS4survey_page {
     background: gainsboro linear-gradient(
-            gainsboro,
-            #0053ba 85%
+            #ffffff,
+            #80b9ff 85%
     );
 }
 
 .XBOXsurvey_page {
     background: gainsboro linear-gradient(
-            gainsboro,
-            #107c10 85%
+            #ffffff,
+            #8ef08e 85%
     );
 }
 
-
+.melee_page {
+    background: gainsboro linear-gradient(
+            #ffffff,
+            #ffb380 85%
+    );
+}
 
 footer {
     font-family: Helvetica, Arial, sans-serif;
