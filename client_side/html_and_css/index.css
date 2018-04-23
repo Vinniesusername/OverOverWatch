@@ -80,6 +80,14 @@ button:focus, input:focus, textarea:focus {
     margin-bottom: 15px;
 }
 
+.Mobile_survey_page {
+    background: gainsboro linear-gradient(
+            gainsboro,
+            #ffd309 85%
+    );
+}
+
+
 .PC_survey_page {
     background: gainsboro linear-gradient(
             gainsboro,
@@ -100,6 +108,8 @@ button:focus, input:focus, textarea:focus {
             #107c10 85%
     );
 }
+
+
 
 footer {
     font-family: Helvetica, Arial, sans-serif;
@@ -123,7 +133,6 @@ footer {
 /*}*/
 
 .green-footer {
-    background-color: #107c10;
     color: #ffffff;
 }
 
